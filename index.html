@@ -1,5 +1,126 @@
-<HTML>
-    <HEAD>
-        <TITLE>BÀI THƠ CÔ HÁI MƠ</TITLE>
-    </HEAD>
-</HTML>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Đẹp Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #666;
+    }
+
+    .banner {
+      background: url('https://via.placeholder.com/1200x300?text=Chào+mừng+đến+với+Shop') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      background: white;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Shop Đẹp Online</h1>
+  <p>Thời trang - Mỹ phẩm - Phụ kiện</p>
+</header>
+
+<nav>
+  <a href="#">Trang chủ</a>
+  <a href="#">Sản phẩm</a>
+  <a href="#">Khuyến mãi</a>
+  <a href="#">Liên hệ</a>
+</nav>
+
+<div class="banner"></div>
+
+<section class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Áo+Thun" alt="Áo Thun">
+    <h3>Áo Thun Nam</h3>
+    <p>Giá: 199.000đ</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Váy+Nữ" alt="Váy Nữ">
+    <h3>Váy Nữ Công Sở</h3>
+    <p>Giá: 299.000đ</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Son+Môi" alt="Son Môi">
+    <h3>Son Môi Đỏ Lì</h3>
+    <p>Giá: 150.000đ</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Đồng+Hồ" alt="Đồng Hồ">
+    <h3>Đồng Hồ Nam</h3>
+    <p>Giá: 499.000đ</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Shop Đẹp Online. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
